@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Bootcamps y Usuarios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Bootcamps y Usuarios</h1>
+  </header>
+
+  <main>
+    <section id="user-section">
+      <h2>Crear Usuario</h2>
+      <form id="user-form">
+        <input type="text" id="userFirstName" placeholder="Nombre" required />
+        <input type="text" id="userLastName" placeholder="Apellido" required />
+        <input type="email" id="userEmail" placeholder="Correo" required />
+        <button type="submit">Crear Usuario</button>
+      </form>
+    </section>
+
+    <section id="bootcamp-section">
+      <h2>Crear Bootcamp</h2>
+      <form id="bootcamp-form">
+        <input type="text" id="bootcampTitle" placeholder="Título del Bootcamp" required />
+        <input type="number" id="bootcampCue" placeholder="CUE" required />
+        <textarea id="bootcampDescription" placeholder="Descripción" required></textarea>
+        <button type="submit">Crear Bootcamp</button>
+      </form>
+    </section>
+
+    <section id="display-section">
+      <h2>Usuarios y Bootcamps</h2>
+      <button id="loadData">Cargar Datos</button>
+      <div id="user-list"></div>
+      <div id="bootcamp-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
